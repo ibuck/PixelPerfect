@@ -84,8 +84,9 @@ FBL.ns(function() {
                     Firebug.toggleDetachBar(true);
                 }
                 else {
-                    Firebug.toggleBar();
-                    Firebug.tabBrowser.selectedBrowser.chrome.selectPanel('pixelPerfect');
+                    //Firebug.toggleBar();
+                    //Firebug.tabBrowser.selectedBrowser.chrome.selectPanel('pixelPerfect');
+                    Firebug.toggleBar(false,'pixelPerfect');
                 }
             },
 
