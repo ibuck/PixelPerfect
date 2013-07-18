@@ -61,7 +61,7 @@ FBL.ns(function() {
             showPanel: function(browser, panel)
             {
                 var isPixelPerfectExtension = panel && panel.name == "pixelPerfect";
-                var PixelPerfectExtensionButtons = browser.chrome.$("fbPixelPerfectPanelButtons");
+                var PixelPerfectExtensionButtons = Firebug.chrome.$("fbPixelPerfectPanelButtons");
                 if (Firebug.getPref(Firebug.prefDomain, "pixelPerfect.hidewhenfocuslost")) {
                     pixelPerfect.utils.setVisibilityForOverlay(isPixelPerfectExtension);
                 }
